@@ -1,0 +1,41 @@
+.heading {
+  text-align: center;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+}
+
+fieldset {
+  border: none;
+  padding: 2rem 0 2rem 0;
+}
+
+form {
+  margin: 0 auto;
+  max-width: 500px;
+  min-width: 300px;
+  width: 60vh;
+}
+
+label {
+  display: block;
+  margin: 1rem;
+}
+
+input,
+select,
+textarea {
+  margin: 5px 0 0 0;
+  width: 100%;
+  min-height: 1em;
+  padding: 8px;
+  border-radius: 12px;
+}
+
+.inline {
+  vertical-align: middle;
+  margin: 0 0.2em 0 0;
+}
