@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="heading">
@@ -13,15 +14,15 @@
 
     <div class="form-container">
       <form id="survey-form">
-        <label for="name"
+        <label for="name" id="name-label"
           >Name
           <input type="text" id="name" required placeholder="Enter your name"
         /></label>
-        <label for="email"
+        <label for="email" id="email-label"
           >Email
           <input type="email" id="email" required placeholder="name@mail.com"
         /></label>
-        <label for="number"
+        <label for="number" id="number-label"
           >Age(optional)<input
             type="number"
             id="number"
@@ -41,9 +42,27 @@
         </label>
         <label for="social-media">
           What is your favorite social meadia platform?
-          <input type="radio" id="social-media" name="platform" /> Instagram
-          <input type="radio" id="social-media" name="platform" /> Twitter
-          <input type="radio" id="social-media" name="platform" /> YouTube
+          <input
+            type="radio"
+            id="social-media"
+            name="platform"
+            value="instagram"
+          />
+          Instagram
+          <input
+            type="radio"
+            id="social-media"
+            name="platform"
+            value="twitter"
+          />
+          Twitter
+          <input
+            type="radio"
+            id="social-media"
+            name="platform"
+            value="youtube"
+          />
+          YouTube
         </label>
         <label for="music">
           What is your favorite music during coding?
@@ -56,7 +75,7 @@
         <label for="comments">
           <textarea name="comments" id="comments" cols="10" rows="3"></textarea>
         </label>
-        <input type="submit" value="Submit" />
+        <input id="submit" type="submit" value="Submit" />
       </form>
     </div>
   </body>
