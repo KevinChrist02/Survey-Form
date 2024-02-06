@@ -14,67 +14,82 @@
 
     <div class="form-container">
       <form id="survey-form">
-        <label for="name" id="name-label"
-          >Name
-          <input type="text" id="name" required placeholder="Enter your name"
-        /></label>
-        <label for="email" id="email-label"
-          >Email
-          <input type="email" id="email" required placeholder="name@mail.com"
-        /></label>
-        <label for="number" id="number-label"
-          >Age(optional)<input
-            type="number"
-            id="number"
-            min="18"
-            max="30"
-            placeholder="Age"
-        /></label>
-        <label for="dropdown"
-          >Which option best describes your current role?
-          <select id="dropdown">
-            <option>Select an option</option>
-            <option>Student</option>
-            <option>Full Time Job</option>
-            <option>Prefer not to say</option>
-            <option>Other</option>
-          </select>
-        </label>
-        <label for="social-media">
-          What is your favorite social meadia platform?
-          <input
-            type="radio"
-            id="social-media"
-            name="platform"
-            value="instagram"
-          />
-          Instagram
-          <input
-            type="radio"
-            id="social-media"
-            name="platform"
-            value="twitter"
-          />
-          Twitter
-          <input
-            type="radio"
-            id="social-media"
-            name="platform"
-            value="youtube"
-          />
-          YouTube
-        </label>
-        <label for="music">
-          What is your favorite music during coding?
-          <input type="checkbox" value="music" id="music" /> LoFi
-          <input type="checkbox" value="music" id="music" /> Binaural beats
-          <input type="checkbox" value="music" id="music" /> White noice
-          <input type="checkbox" value="music" id="music" /> Rain
-          <input type="checkbox" value="music" id="music" /> Café
-        </label>
-        <label for="comments">
-          <textarea name="comments" id="comments" cols="10" rows="3"></textarea>
-        </label>
+        <fieldset>
+          <label for="name" id="name-label"
+            >Name
+            <input type="text" id="name" required placeholder="Enter your name"
+          /></label>
+          <label for="email" id="email-label"
+            >Email
+            <input type="email" id="email" required placeholder="name@mail.com"
+          /></label>
+          <label for="number" id="number-label"
+            >Age(optional)<input
+              type="number"
+              id="number"
+              min="18"
+              max="30"
+              placeholder="Age"
+          /></label>
+          <label for="dropdown"
+            >Which option best describes your current role?
+            <select id="dropdown">
+              <option>Select an option</option>
+              <option>Student</option>
+              <option>Full Time Job</option>
+              <option>Prefer not to say</option>
+              <option>Other</option>
+            </select>
+          </label>
+          <label for="social-media">
+            What is your favorite social media platform?
+            <input
+              type="radio"
+              id="social-media"
+              name="platform"
+              value="instagram"
+              class="inline"
+            />
+            Instagram
+            <input
+              type="radio"
+              id="social-media"
+              name="platform"
+              value="twitter"
+              class="inline"
+            />
+            Twitter
+            <input
+              type="radio"
+              id="social-media"
+              name="platform"
+              value="youtube"
+              class="inline"
+            />
+            YouTube
+          </label>
+          <label for="music" id="music">
+            What is your favorite music during coding?
+            <input type="checkbox" value="music" id="music" class="inline" />
+            LoFi
+            <input type="checkbox" value="music" id="music" class="inline" />
+            Binaural beats
+            <input type="checkbox" value="music" id="music" class="inline" />
+            White noice
+            <input type="checkbox" value="music" id="music" class="inline" />
+            Rain
+            <input type="checkbox" value="music" id="music" class="inline" />
+            Café
+          </label>
+          <label for="comments">
+            <textarea
+              name="comments"
+              id="comments"
+              cols="10"
+              rows="3"
+            ></textarea>
+          </label>
+        </fieldset>
         <input id="submit" type="submit" value="Submit" />
       </form>
     </div>
