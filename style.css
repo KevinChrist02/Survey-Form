@@ -38,4 +38,5 @@ textarea {
 .inline {
   vertical-align: middle;
   margin: 0 0.2em 0 0;
+  width: unset;
 }
